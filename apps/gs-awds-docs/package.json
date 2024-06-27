@@ -1,7 +1,6 @@
 {
-  "name": "app",
-  "version": "0.0.0",
-  "repository": "https://github.com/vercel/examples.git",
+  "name": "gs-awds-docs",
+  "version": "0.0.1",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -11,12 +10,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@acme/ui": "workspace:*",
-    "@acme/utils": "workspace:*",
-    "@vercel/examples-ui": "^1.0.4",
-    "next": "canary",
+    "gs-awds": "workspace:*",
+    "gs-awds-utils": "workspace:*",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.396.0",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

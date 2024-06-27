@@ -1,0 +1,83 @@
+{
+  "name": "gs-awds",
+  "version": "0.0.3",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pnpm build:swc -w",
+    "build": "rm -rf dist && pnpm build:swc && pnpm types",
+    "build:swc": "swc ./types.ts ./*.tsx ./globals.css ./tailwind.cjs -d ./dist --copy-files",
+    "types": "tsc --emitDeclarationOnly",
+    "lint": "TIMING=1 eslint . --ext .js,.jsx,.ts,.tsx",
+    "clean": "rm -rf ./dist && rm -rf .turbo"
+  },
+  "sideEffects": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./tailwind": {
+      "require": "./dist/tailwind.cjs"
+    },
+    "./globals.css": "./dist/globals.css",
+    "./types": "./dist/types.d.ts"
+  },
+  "files": [
+    "dist/**/*.{js,cjs,d.ts,d.cts,css}"
+  ],
+  "typesVersions": {
+    "*": {
+      "index": [
+        "dist/index.d.ts"
+      ],
+      "tailwind": [
+        "dist/tailwind.d.cts"
+      ],
+      "types": [
+        "dist/types.d.ts"
+      ]
+    }
+  },
+  "publishConfig": {
+    "typesVersions": {
+      "*": {
+        "index": [
+          "dist/index.d.ts"
+        ],
+        "tailwind": [
+          "dist/tailwind.d.cts"
+        ],
+        "types": [
+          "dist/types.d.ts"
+        ]
+      }
+    }
+  },
+  "peerDependencies": {
+    "next": "*",
+    "react": "^17.0.0 || ^18.0.0-0",
+    "react-dom": "^17.0.0 || ^18.0.0-0"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@swc/helpers": "^0.4.12",
+    "gs-awds-utils": "workspace:*",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.396.0",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul": "^0.9.1"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.3.14",
+    "@swc/core": "^1.6.5",
+    "@types/react": "^18.3.3",
+    "chokidar": "^3.6.0",
+    "eslint": "^8.11.0",
+    "eslint-config-next": "15.0.0-canary.44",
+    "next": "^0.1.0",
+    "tailwindcss": "^3.2.1",
+    "typescript": "4.8.4"
+  }
+}

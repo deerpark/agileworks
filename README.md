@@ -17,10 +17,10 @@ relatedTemplates:
 
 # Monorepo
 
-This is a monorepo example with a single Next.js site ([./apps/app](./apps/app)) that has installed two local packages:
+This is a monorepo example with a single Next.js site ([./apps/gs-awds-docs](./apps/gs-awds-app)) that has installed two local packages:
 
-- [./packages/ui](./packages/ui): Exports UI components that use TypeScript and Tailwind CSS and is compiled by SWC.
-- [./packages/utils](./packages/utils): Exports utility functions that use TypeScript.
+- [./packages/gs-awds](./packages/gs-awds): Exports UI components that use TypeScript and Tailwind CSS and is compiled by SWC.
+- [./packages/gs-awds-utils](./packages/gs-awds-utils): Exports utility functions that use TypeScript.
 
 The monorepo is using [Turborepo](https://turborepo.org/) and [pnpm workspaces](https://pnpm.io/workspaces) to link packages together.
 

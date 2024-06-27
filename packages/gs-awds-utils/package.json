@@ -1,9 +1,7 @@
 {
-  "name": "@acme/utils",
+  "name": "gs-awds-utils",
   "version": "0.0.1",
-  "repository": "https://github.com/vercel/examples.git",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "pnpm build --watch",
     "build": "rm -fr dist/* && tsc",
@@ -43,5 +41,9 @@
   "devDependencies": {
     "eslint": "^8.11.0",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.3.0"
   }
 }
