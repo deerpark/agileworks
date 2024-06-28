@@ -12,7 +12,7 @@
     "start": "turbo run start",
     "lint": "turbo run lint",
     "clean": "turbo run clean",
-    "v": "changeset version",
+    "bump": "changeset version",
     "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
