@@ -6,6 +6,7 @@
     "dev": "pnpm build --watch",
     "build": "rm -fr dist/* && tsc",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
+    "prepublishOnly": "pnpm build",
     "clean": "rm -rf ./dist && rm -rf .turbo"
   },
   "sideEffects": false,
@@ -39,6 +40,7 @@
     "dist"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
     "eslint": "^8.11.0",
     "typescript": "^4.5.5"
   },

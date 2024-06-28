@@ -1,5 +1,5 @@
 {
-  "repository": "https://github.com/vercel/examples.git",
+  "name": "agileworks",
   "license": "MIT",
   "private": true,
   "workspaces": [
@@ -11,11 +11,15 @@
     "dev": "turbo run dev",
     "start": "turbo run start",
     "lint": "turbo run lint",
-    "clean": "turbo run clean"
+    "clean": "turbo run clean",
+    "v": "changeset version",
+    "release": "pnpm build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.6",
     "eslint": "^8.28.0",
     "eslint-config-turbo": "latest",
-    "turbo": "^1.8.3"
-  }
+    "turbo": "^2.0.5"
+  },
+  "packageManager": "pnpm@9.4.0"
 }
