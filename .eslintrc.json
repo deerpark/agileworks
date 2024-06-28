@@ -1,4 +1,9 @@
 {
   "root": true,
-  "extends": ["eslint:recommended", "next/core-web-vitals", "turbo"]
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "turbo"
+  ]
 }

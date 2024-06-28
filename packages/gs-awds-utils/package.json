@@ -40,8 +40,6 @@
     "dist"
   ],
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "eslint": "^8.11.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {
