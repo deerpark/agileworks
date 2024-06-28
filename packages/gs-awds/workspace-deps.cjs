@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const packagesDir = path.resolve(__dirname, "packages");
+const packagesDir = path.resolve(__dirname, "../");
 // const distDir = path.resolve(__dirname, "dist");
 
 // 패키지 디렉토리 내의 모든 패키지를 가져옴

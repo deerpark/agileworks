@@ -15,7 +15,9 @@ export default function ButtonExample() {
           <h3 id="solid" className="text-base font-bold" role="navigation">
             Solid
           </h3>
-          <p className="font-mono text-xs opacity-50">variants="solid"</p>
+          <p className="font-mono text-xs opacity-50">
+            variants=&quot;solid&quot;
+          </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
           <Button size="large" primary={a}>
@@ -36,7 +38,9 @@ export default function ButtonExample() {
           >
             Outline
           </h3>
-          <p className="font-mono text-xs opacity-50">variants="outline"</p>
+          <p className="font-mono text-xs opacity-50">
+            variants=&quot;outline&quot;
+          </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
           <Button
@@ -66,7 +70,9 @@ export default function ButtonExample() {
           >
             Ghost
           </h3>
-          <p className="font-mono text-xs opacity-50">variants="ghost"</p>
+          <p className="font-mono text-xs opacity-50">
+            variants=&quot;ghost&quot;
+          </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
           <Button variant="ghost" size="large" primary>
@@ -91,7 +97,9 @@ export default function ButtonExample() {
           >
             Solid with icon
           </h3>
-          <p className="font-mono text-xs opacity-50">variants="solid"</p>
+          <p className="font-mono text-xs opacity-50">
+            variants=&quot;solid&quot;
+          </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
           <Button primary>
@@ -185,7 +193,7 @@ export default function ButtonExample() {
             Outline + circle
           </h3>
           <p className="font-mono text-xs opacity-50">
-            variants="outline" circle
+            variants=&quot;outline&quot; circle
           </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
@@ -207,7 +215,9 @@ export default function ButtonExample() {
           >
             Ghost + link
           </h3>
-          <p className="font-mono text-xs opacity-50">variants="ghost" link</p>
+          <p className="font-mono text-xs opacity-50">
+            variants=&quot;ghost&quot; link
+          </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">
           <Button variant="ghost" primary link size="large">
@@ -229,7 +239,7 @@ export default function ButtonExample() {
             Ghost + icon + circle
           </h3>
           <p className="font-mono text-xs opacity-50">
-            variants="ghost" icon circle
+            variants=&quot;ghost&quot; icon circle
           </p>
         </div>
         <div className="mb-2 flex items-center gap-x-2">

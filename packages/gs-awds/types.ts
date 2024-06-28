@@ -6,3 +6,6 @@ export type ComponentSize =
   | "large"
   | "icon";
 export type ComponentVariant = "solid" | "outline" | "destructive" | "ghost";
+export type CommonProps = {
+  className?: string;
+};
