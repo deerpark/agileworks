@@ -1,6 +1,6 @@
 {
   "name": "gs-awds",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "scripts": {
     "dev": "pnpm build:swc -w",
