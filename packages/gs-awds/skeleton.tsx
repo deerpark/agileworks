@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "gs-awds-utils";
 
 function Skeleton({

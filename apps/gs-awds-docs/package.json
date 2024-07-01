@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^1.2.1",
     "gs-awds": "workspace:*",
