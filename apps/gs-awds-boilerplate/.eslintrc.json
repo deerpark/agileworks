@@ -1,5 +1,13 @@
 {
-  "extends": ["plugin:react/recommended"]
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "extends": [
+    "prettier",
+    "plugin:react/recommended",
+    "next/babel",
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended"
+  ],
   "plugins": ["tailwindcss"],
   "rules": {
     "@next/next/no-html-link-for-pages": "off",
@@ -15,4 +23,10 @@
       "rootDir": ["./"]
     }
   },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
 }

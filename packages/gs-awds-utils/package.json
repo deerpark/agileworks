@@ -19,8 +19,8 @@
   },
   "typesVersions": {
     "*": {
-      "*": [
-        "src/*"
+      "index": [
+        "dist/index.d.ts"
       ],
       "content": [
         "dist/commonjs/tailwind-content.d.cts"
@@ -30,8 +30,8 @@
   "publishConfig": {
     "typesVersions": {
       "*": {
-        "*": [
-          "dist/*.d.ts"
+        "index": [
+          "dist/index.d.ts"
         ],
         "content": [
           "dist/commonjs/tailwind-content.d.cts"
