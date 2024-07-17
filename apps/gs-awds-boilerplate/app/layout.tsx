@@ -1,26 +1,26 @@
-import "gs-awds/globals.css";
+import "gs-awds/globals.css"
 
-import Link from "next/link";
-import { Analytics } from "@vercel/analytics/react";
-import { Logo, UsersIcon } from "@/components/icons";
-import { ThemeProvider } from "@/components/provider";
+import Link from "next/link"
+import { Analytics } from "@vercel/analytics/react"
+
+import { Logo, UsersIcon } from "@/components/icons"
+import { ThemeProvider } from "@/components/provider"
 
 export const metadata = {
   title: "Next.js App Router + NextAuth + Tailwind CSS",
   description:
     "A user admin dashboard configured with Next.js, Postgres, NextAuth, Tailwind CSS, TypeScript, and Prettier.",
-};
+}
 
 export default function RootLayout({
   children,
   test,
   search,
 }: {
-  children: React.ReactNode;
-  test: React.ReactNode;
-  search: React.ReactNode;
+  children: React.ReactNode
+  test: React.ReactNode
+  search: React.ReactNode
 }) {
-  console.log(test, search);
   return (
     <html lang="ko" suppressHydrationWarning>
       <body>
@@ -31,8 +31,7 @@ export default function RootLayout({
                 <div className="flex h-[60px] items-center border-b px-5">
                   <Link
                     className="flex items-center gap-2 font-semibold"
-                    href="/"
-                  >
+                    href="/">
                     <Logo />
                     <span className="">agileworks</span>
                   </Link>
@@ -48,8 +47,7 @@ export default function RootLayout({
               <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40 justify-between lg:justify-end">
                 <Link
                   className="flex items-center gap-2 font-semibold lg:hidden"
-                  href="/"
-                >
+                  href="/">
                   <Logo />
                   <span className="">ACME</span>
                 </Link>
@@ -64,5 +62,5 @@ export default function RootLayout({
         <Analytics />
       </body>
     </html>
-  );
+  )
 }
