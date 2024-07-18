@@ -4,7 +4,6 @@
   "extends": [
     "prettier",
     "plugin:react/recommended",
-    "next/babel",
     "next/core-web-vitals",
     "plugin:tailwindcss/recommended"
   ],
