@@ -2,7 +2,6 @@
   "name": "gs-awds-utils",
   "version": "0.0.3",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "dev": "pnpm build --watch",
     "build": "rm -fr dist/* && tsc -b",
