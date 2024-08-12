@@ -8,5 +8,9 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["gs-awds-docs", "gs-awds-boilerplate"]
+  "ignore": [
+    "gs-awds-docs",
+    "gs-awds-boilerplate",
+    "gs-awds-boilerplate-nextjs"
+  ]
 }

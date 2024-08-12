@@ -1,4 +1,4 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const colors = {
   gray: {
@@ -66,7 +66,7 @@ const colors = {
   },
   input: "hsl(var(--awds-color-border-secondary))",
   brand: {
-    primary: "hsla(var(--awds-color-brand-primary))",
+    "primary": "hsla(var(--awds-color-brand-primary))",
     "primary-hovered": "hsla(var(--awds-color-brand-primary-hovered))",
     "primary-pressed": "hsla(var(--awds-color-brand-primary-pressed))",
     "primary-soft": "hsla(var(--awds-color-brand-primary-soft))",
@@ -74,19 +74,19 @@ const colors = {
       "hsla(var(--awds-color-brand-primary-soft-hovered))",
     "primary-soft-pressed":
       "hsla(var(--awds-color-brand-primary-soft-pressed))",
-    dimo: "hsla(var(--awds-color-brand-dimo))",
+    "dimo": "hsla(var(--awds-color-brand-dimo))",
     "dimo-hovered": "hsla(var(--awds-color-brand-dimo-hovered))",
     "dimo-pressed": "hsla(var(--awds-color-brand-dimo-pressed))",
     "dimo-soft": "hsla(var(--awds-color-brand-dimo-soft))",
     "dimo-soft-hovered": "hsla(var(--awds-color-brand-dimo-soft-hovered))",
     "dimo-soft-pressed": "hsla(var(--awds-color-brand-dimo-soft-pressed))",
-    coni: "hsla(var(--awds-color-brand-coni))",
+    "coni": "hsla(var(--awds-color-brand-coni))",
     "coni-hovered": "hsla(var(--awds-color-brand-coni-hovered))",
     "coni-pressed": "hsla(var(--awds-color-brand-coni-pressed))",
     "coni-soft": "hsla(var(--awds-color-brand-coni-soft))",
     "coni-soft-hovered": "hsla(var(--awds-color-brand-coni-soft-hovered))",
     "coni-soft-pressed": "hsla(var(--awds-color-brand-coni-soft-pressed))",
-    voci: "hsla(var(--awds-color-brand-voci))",
+    "voci": "hsla(var(--awds-color-brand-voci))",
     "voci-hovered": "hsla(var(--awds-color-brand-voci-hovered))",
     "voci-pressed": "hsla(var(--awds-color-brand-voci-pressed))",
     "voci-soft": "hsla(var(--awds-color-brand-voci-soft))",
@@ -115,7 +115,7 @@ const colors = {
     aquablue: "hsla(var(--awds-color-gsshop-aquablue))",
     earthbrown: "hsla(var(--awds-color-gsshop-earthbrown))",
   },
-};
+}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -278,9 +278,6 @@ module.exports = {
       borderWidth: {
         1: "1.5px",
       },
-      boxShadow: {
-        custom: "var(--awds-shadow-default)",
-      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -295,8 +292,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      boxShadow: {
+        DEFAULT: "var(--awds-shadow-default)",
+        custom: "var(--awds-shadow-default)",
+      },
       colors,
     },
   },
   plugins: [require("tailwindcss-animate")],
-};
+}
