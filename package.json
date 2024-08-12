@@ -22,7 +22,7 @@
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.56.0",
     "eslint-config-turbo": "latest",
-    "turbo": "^2.0.5"
+    "turbo": "^2.0.12"
   },
   "packageManager": "pnpm@9.4.0",
   "dependencies": {
