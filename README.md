@@ -13,4 +13,12 @@ run `apps/docs` in development mode:
 pnpm dev
 ```
 
-The app should be up and running at http://localhost:3000.
+## release
+
+```bash
+npx changeset
+pnpm bump
+pnpm release
+```
+
+The app should be up and running at <http://localhost:3000>.
